@@ -85,9 +85,36 @@ there is an assertion in the validator that fails if it ever regresses.
 
 ---
 
+### 📐 [Expert-calibrated domain scoring](https://github.com/Kyyota-Wang/expert-calibrated-scoring) — scoring that was calibrated, then checked
+
+Python · Pydantic · structured output
+
+Scores a job description against a fixed ontology of 44 life-science domains,
+1–10 with a written reason per score. The scoring is the easy part; the reason
+this one is here is what surrounds it.
+
+**The calibration is an offset, and it is written down.** A clinical panel
+hand-scored a seed set to establish the baseline. Aligning the model to it
+revealed that the panel judged relevance about **one band more inclusively** than
+the model does by default — where a domain sits in the macro background of a
+senior role, the panel called it moderately relevant and the model called it
+weak. That offset is stated in plain language in the rubric, along with the
+specific disagreements found during calibration, rather than being absorbed
+invisibly from a few-shot set. It is a thumb on the scale, deliberately, and a
+reader can disagree with it.
+
+**Then it was checked.** Two independent scoring runs were compared across
+~1,000 jobs × 44 domains. The first version of that analysis reported band
+agreement alone, which flatters when scores cluster; it now reports quadratic
+weighted kappa alongside a signed mean difference, so *"these two disagree"* is
+separable from *"one sits a point above the other"* — the second being a
+calibration offset, and fixable.
+
+---
+
 ## Research
 
-41 peer-reviewed publications · 857 citations · h-index 15 · 4 granted U.S. patents, 2 pending
+42 peer-reviewed publications · 858 citations · h-index 15 · 4 granted U.S. patents, 2 pending
 
 Recent work in **IEEE TPAMI**, **NeurIPS**, and **CVPR** (2024–2026), on adversarial
 robustness and distributed learning. Ph.D. dissertation: *Distributed Bayesian Learning in
@@ -97,6 +124,14 @@ Primary inventor on patented HCP-level promotion response and multichannel media
 methods now used in commercial pharmaceutical measurement.
 
 → [Google Scholar](https://scholar.google.com/citations?user=xHv-7cQAAAAJ)
+
+**Papers with public code** — released by the first authors:
+
+| Paper | Venue | Code |
+|---|---|---|
+| Boosting the Transferability of Adversarial Attack on Vision Transformer with Adaptive Token Tuning | NeurIPS 2024 | [MisterRpeng/ATT](https://github.com/MisterRpeng/ATT) |
+| TRM-UAP: Enhancing the Transferability of Data-Free Universal Adversarial Perturbation via Truncated Ratio Maximization | ICCV 2023 | [RandolphCarter0/TRMUAP](https://github.com/RandolphCarter0/TRMUAP) |
+| SUOD: Accelerating Large-Scale Unsupervised Heterogeneous Outlier Detection | MLSys 2021 | [yzhao062/SUOD](https://github.com/yzhao062/SUOD) |
 
 ---
 
