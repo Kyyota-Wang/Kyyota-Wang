@@ -125,13 +125,15 @@ methods now used in commercial pharmaceutical measurement.
 
 → [Google Scholar](https://scholar.google.com/citations?user=xHv-7cQAAAAJ)
 
-**Papers with public code** — released by the first authors:
+→ **[Research collaborations](https://github.com/Kyyota-Wang/research-collaborations)** —
+an index of the published work I contribute to with academic groups and where the
+code lives, with full author lists and BibTeX. The linked repositories belong to
+the students and researchers who did the experimental work; they are linked there,
+not forked here.
 
-| Paper | Venue | Code |
-|---|---|---|
-| Boosting the Transferability of Adversarial Attack on Vision Transformer with Adaptive Token Tuning | NeurIPS 2024 | [MisterRpeng/ATT](https://github.com/MisterRpeng/ATT) |
-| TRM-UAP: Enhancing the Transferability of Data-Free Universal Adversarial Perturbation via Truncated Ratio Maximization | ICCV 2023 | [RandolphCarter0/TRMUAP](https://github.com/RandolphCarter0/TRMUAP) |
-| SUOD: Accelerating Large-Scale Unsupervised Heterogeneous Outlier Detection | MLSys 2021 | [yzhao062/SUOD](https://github.com/yzhao062/SUOD) |
+Includes a seven-paper collaboration on transferable adversarial attacks running
+since 2023 — ICCV 2023, CVPR 2024, NeurIPS 2024, IEEE TPAMI 2026 — and notes
+plainly which lines of work have no published code, and why.
 
 ---
 
