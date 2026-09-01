@@ -112,6 +112,33 @@ calibration offset, and fixable.
 
 ---
 
+### 🔁 [conversational-agent-eval](https://github.com/Kyyota-Wang/conversational-agent-eval) — testing an agent that is different every time
+
+JavaScript · zero dependencies
+
+Extracted from the harness behind a production intake assistant. Three ideas,
+each aimed at a failure a turn-by-turn review cannot catch:
+
+**Rules before the judge.** "Turn 3 asked four questions" is a fact; handing it
+to a model invites an opinion about it. The rule layer costs nothing and has no
+variance, so it runs on every commit — including the check that the agent never
+asks a member of the public for a password, a card number, or medical records.
+When a rule and the judge disagree, the rule is right.
+
+**Convergence is a property of the transcript.** An agent can be correct on every
+single turn and still never say *"I have enough — here is the next step."* Score
+it turn by turn and every turn passes while the conversation fails. So
+convergence is measured over the whole transcript, with a declared window:
+converging on turn one is as much a failure as never converging.
+
+**Flapping is its own verdict.** Every case runs N times. A case that passes two
+runs out of three is not a passing case — it will fail in front of a user
+eventually, and it needs a different fix from one that always fails. It gets its
+own bucket instead of being rounded into a pass rate. There is a test asserting
+that a single run cannot tell flapping from passing.
+
+---
+
 ## Research
 
 42 peer-reviewed publications · 858 citations · h-index 15 · 4 granted U.S. patents, 2 pending
