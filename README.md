@@ -7,6 +7,8 @@ Most of what I ship is behind an enterprise firewall, so the repositories here a
 ones I built on my own time to keep the hands-on half honest: real deployments, real
 users, real evaluation numbers including the ones that are not flattering.
 
+**Live now —** [indhive.com](https://indhive.com) · [cloverailab.com](https://cloverailab.com) · [pumpkinsolve.com](https://pumpkinsolve.com)
+
 [LinkedIn](https://linkedin.com/in/yunlongwangsbu) ·
 [Google Scholar](https://scholar.google.com/citations?user=xHv-7cQAAAAJ) ·
 markyunlongwang@gmail.com · Malvern, PA
@@ -20,15 +22,15 @@ clinical development, and regulatory workflow. The recurring problem in this spa
 model quality. It is **whether you can defend the output**: where each value came from,
 what the system refused to decide, and how you know it is right.
 
-That constraint shows up in both projects below.
+That constraint shows up in every project below. Three of them are deployed and open in a browser right now, so you can check.
 
 ---
 
 ## Projects
 
-### 🐝 [INDHive](https://github.com/Kyyota-Wang/indhive) — automated FDA IND Module 1 preparation
+### 🐝 [INDHive](https://indhive.com) — automated FDA IND Module 1 preparation
 
-**[indhive.com](https://indhive.com)** · Python · TypeScript · Cloudflare Workers
+**[indhive.com](https://indhive.com)** · [source](https://github.com/Kyyota-Wang/indhive) · Python · TypeScript · Cloudflare Workers
 
 Sponsor, product, protocol and plan records go in; a deterministic pipeline normalises them
 into one canonical record and maps that into FDA Module 1 artifacts — Form 1571, the 1.20
@@ -56,9 +58,9 @@ not regulatory software — and the README says so before you ask.*
 
 ---
 
-### 🍀 [CloverAI Lab](https://github.com/Kyyota-Wang/cloverailab) — GRE Analytical Writing reviewer
+### 🍀 [CloverAI Lab](https://cloverailab.com) — GRE Analytical Writing reviewer
 
-**[cloverailab.com](https://cloverailab.com)** · TypeScript · Cloudflare Workers · Claude
+**[cloverailab.com](https://cloverailab.com)** · [source](https://github.com/Kyyota-Wang/cloverailab) · TypeScript · Cloudflare Workers · Claude
 
 An essay reviewer built on LLM-as-judge with an explicit ETS rubric and official scored
 anchors, plus a writer agent. No fine-tuning — 30 ground-truth essays cannot train a scoring
@@ -114,7 +116,7 @@ calibration offset, and fixable.
 
 ### 🎃 [Pumpkin AI](https://pumpkinsolve.com) — a private assistant for thinking a question through
 
-**[pumpkinsolve.com](https://pumpkinsolve.com)** · Next.js · Cloudflare Workers · Gemini
+**[pumpkinsolve.com](https://pumpkinsolve.com)** · source private · Next.js · Cloudflare Workers · Gemini
 
 Somewhere to bring a half-formed practical question — about a workflow, a piece
 of research, an application — and have an assistant help frame it, offer a first
