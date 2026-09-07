@@ -112,12 +112,27 @@ calibration offset, and fixable.
 
 ---
 
+### 🎃 [Pumpkin AI](https://pumpkinsolve.com) — a private assistant for thinking a question through
+
+**[pumpkinsolve.com](https://pumpkinsolve.com)** · Next.js · Cloudflare Workers · Gemini
+
+Somewhere to bring a half-formed practical question — about a workflow, a piece
+of research, an application — and have an assistant help frame it, offer a first
+pass, and compare directions, in a session no one else can see. It sells
+nothing and takes on no work; the point is to watch what people actually ask
+when the question is still unformed, because that is where the useful tools turn
+out to be hiding.
+
+The next repository is the evaluation harness built to keep it honest.
+
+---
+
 ### 🔁 [conversational-agent-eval](https://github.com/Kyyota-Wang/conversational-agent-eval) — testing an agent that is different every time
 
 JavaScript · zero dependencies
 
-Extracted from the harness behind a production intake assistant. Three ideas,
-each aimed at a failure a turn-by-turn review cannot catch:
+The harness behind the assistant above, generalised. Three ideas, each aimed at
+a failure a turn-by-turn review cannot catch:
 
 **Rules before the judge.** "Turn 3 asked four questions" is a fact; handing it
 to a model invites an opinion about it. The rule layer costs nothing and has no
